@@ -39,29 +39,31 @@ document.addEventListener('DOMContentLoaded', function() {
     if (form) {
         form.addEventListener('submit', function(e) {
             e.preventDefault();
-            
+
             const formData = new FormData(form);
             const data = Object.fromEntries(formData);
-            
-            // Show success message (in production, this would send to backend)
+
+            // Show success message immediately
             const successDiv = document.createElement('div');
             successDiv.className = 'form-success';
             successDiv.innerHTML = `
                 <h3>Thank You!</h3>
                 <p>We've received your request and will contact you within 24 hours to schedule your showing.</p>
             `;
-            
+
             form.parentElement.appendChild(successDiv);
             form.style.display = 'none';
             successDiv.style.display = 'block';
-            
-            // In production, send to backend:
-            // fetch('/api/schedule-showing', {
-            //     method: 'POST',
-            //     headers: { 'Content-Type': 'application/json' },
-            //     body: JSON.stringify(data)
-            // });
-            
+
+            // Send to relay backend via tunnel
+            fetch('https://inbox.31harbor.com/api/contact/31harbor', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+            }).catch(function(err) {
+                console.log('Form send error (non-blocking):', err);
+            });
+
             console.log('Showing request:', data);
         });
     }
