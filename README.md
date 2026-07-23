@@ -1,9 +1,11 @@
-# 31 Harbor Road — Napeague Waterfront Cottage
+# 31 Harbor Road — Napeague Bay View Cottage
 
 **Listing website:** https://31harbor.com (GitHub Pages, custom domain)
 
-For-sale-by-owner listing site for a waterfront cottage in the Napeague Camping Club,
-Amagansett, NY — between the Atlantic Ocean and Gardiners Bay.
+> **NOTE — July 2026: ALL DISTRIBUTION HALTED per David Elze directive.**
+> This site is retained for reference. Do not distribute or promote without David's explicit approval.
+> The property is a **Douglas Elliman exclusive** (MLS #422823, listing agent Julie Gauger, East Hampton office).
+> Key corrections applied: "Waterfront" → Bay View + Association Beach Rights. "First public offering" hook RETIRED. House built 2018.
 
 ---
 
@@ -14,22 +16,22 @@ Amagansett, NY — between the Atlantic Ocean and Gardiners Bay.
 - **Bedrooms:** 3
 - **Bathrooms:** 2
 - **Square Feet:** 960
-- **Status:** First public offering in Napeague Camping Club history
+- **House Built:** 2018
+- **Water:** Bay View + Association Beach Rights
+- **Listing:** Douglas Elliman exclusive — MLS #422823
+- **Listing Agent:** Julie Gauger, East Hampton office (631-793-3133)
+- **Elliman Listing:** https://www.elliman.com/listing/31-harbor-rd-amagansett-ny-11930/30955889
 
 ## 🌊 The Community
 
-Napeague is one of the least populated and least developed parts of the Hamptons — a
-narrow strip of land between the Atlantic Ocean and Gardiners Bay. The Napeague
-Camping Club evolved from a 1950s campground into a private waterfront community of
-working waterfront families. This is believed to be the first residence in the club
-ever offered on the public market.
+Napeague is one of the least populated and least developed parts of the Hamptons — a narrow strip of land between the Atlantic Ocean and Gardiners Bay. The Napeague Camping Club evolved from a 1950s campground into a private community of working waterfront families.
 
 **Highlights:**
 
-- Private waterfront community between East Hampton and Montauk (~15 min to each)
+- Private community between East Hampton and Montauk (~15 min to each)
 - World-class kiteboarding and windsurfing at your doorstep
 - Atlantic Ocean beaches within walking distance
-- Gardiners Bay waterfront access
+- Gardiners Bay access via association beach rights
 - Nature preserves and hiking trails nearby
 - Authentic working waterfront culture — not luxury development
 
@@ -38,13 +40,13 @@ ever offered on the public market.
 ## 📋 Website Sections
 
 1. **Hero** — Full-screen photo, price, and showing CTA
-2. **Stats Bar** — 3 bed / 2 bath / 960 sq ft / waterfront / first public offering
-3. **About** — First public offering story + Napeague community overview
+2. **Stats Bar** — 3 bed / 2 bath / 960 sq ft / bay view / Douglas Elliman exclusive
+3. **About** — Napeague community overview
 4. **Features Grid** — 6 feature cards (community, cottage, kiteboarding, culture, nature)
-5. **Gallery** — 31 photos, filterable (exterior / interior / waterfront) with lightbox
+5. **Gallery** — 31 photos, filterable (exterior / interior / bay view) with lightbox
 6. **Floor Plan** — Level 1 and Level 2 plans
 7. **Location** — Napeague neighborhood highlights
-8. **Schedule Showing** — Owner contact info + showing request form
+8. **Schedule Showing** — Contact via Douglas Elliman listing
 
 ## 🛠️ Tech Stack
 
@@ -66,13 +68,12 @@ git push origin main
 GitHub Pages settings: repo → **Settings → Pages** → deploy from `main` / root.
 DNS for `31harbor.com` points to GitHub Pages; the `CNAME` file in this repo holds the domain.
 
-## 📞 Contact (Owner & Seller)
+## 📞 Contact
 
-**David Elze** — Napeague Camping Club
-- **Phone:** (631) 997-8503
+**Listing Agent:** Julie Gauger — Douglas Elliman, East Hampton Office
+- **Phone:** (631) 793-3133
+- **Elliman Listing:** https://www.elliman.com/listing/31-harbor-rd-amagansett-ny-11930/30955889
 - **Address:** 31 Harbor Road, Amagansett, NY 11930
-- **Showings:** Mon–Sat 10 AM–6 PM, Sun 12–5 PM, evenings by appointment
-- Request a showing via the form on https://31harbor.com
 
 ---
 
