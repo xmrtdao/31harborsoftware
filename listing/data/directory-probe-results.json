@@ -1,0 +1,85 @@
+{
+  "goldmines": [
+    {
+      "domain": "c21nh.com",
+      "total": 46,
+      "patterns": "/agents",
+      "sample": "akraftc21nh@gmail.com, alicet@metrocast.net"
+    },
+    {
+      "domain": "crossviewrealty.com",
+      "total": 41,
+      "patterns": "/team",
+      "sample": "user@domain.com, alex.novikov@crossviewrealty.com"
+    },
+    {
+      "domain": "hagenanderson.com",
+      "total": 34,
+      "patterns": "/team",
+      "sample": "user@domain.com, michael@hagenanderson.com"
+    },
+    {
+      "domain": "jacklingo.com",
+      "total": 33,
+      "patterns": "/agents",
+      "sample": "realtor@jacklingo.com, lewes@jacklingo.com"
+    },
+    {
+      "domain": "laerrealty.com",
+      "total": 25,
+      "patterns": "/agents",
+      "sample": "HappyAgent@LAERRealty.com, TDucy@laerrealtyme.com"
+    },
+    {
+      "domain": "people1st.ca",
+      "total": 34,
+      "patterns": "/agents",
+      "sample": "tracy@people1st.ca, amanda@peopleplacesproperties.ca"
+    },
+    {
+      "domain": "rswtpa.com",
+      "total": 12,
+      "patterns": "/our-team",
+      "sample": "rsw@rswtpa.com, 605a7baede844d278b89dc95ae0a9123@sentry-next.wixpress.com"
+    }
+  ],
+  "silver": [
+    {
+      "domain": "brittneypino.com",
+      "total": 2,
+      "patterns": "/our-team",
+      "sample": "user@domain.com, brittneypino@yahoo.com"
+    },
+    {
+      "domain": "brokersre.com",
+      "total": 1,
+      "patterns": "/our-agents",
+      "sample": "marketing@brokersre.com"
+    },
+    {
+      "domain": "buysdhomes.com",
+      "total": 1,
+      "patterns": "/our-agents",
+      "sample": "Alex@BuySDhomes.com"
+    },
+    {
+      "domain": "meetmeinmoncton.com",
+      "total": 1,
+      "patterns": "/team",
+      "sample": "user@domain.com"
+    },
+    {
+      "domain": "nebraskarealty.com",
+      "total": 4,
+      "patterns": "/agents, /team, /our-agents, /our-team",
+      "sample": "app-logo@2x.png"
+    },
+    {
+      "domain": "sudburyrealestateboard.com",
+      "total": 1,
+      "patterns": "/team",
+      "sample": "user@domain.com"
+    }
+  ],
+  "ts": "2026-06-24T20:17:33.444Z"
+}

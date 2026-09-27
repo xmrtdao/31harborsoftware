@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You — 31 Harbor Road</title>
+    <meta name="description" content="Your showing request has been received for 31 Harbor Road, Amagansett.">
+    <meta name="robots" content="noindex">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .thank-you-section {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .thank-you-card {
+            max-width: 600px;
+            background: white;
+            border-radius: 16px;
+            padding: 60px 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+        .thank-you-icon {
+            font-size: 64px;
+            margin-bottom: 16px;
+        }
+        .thank-you-card h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: var(--primary);
+            margin: 0 0 16px;
+        }
+        .thank-you-card p {
+            color: var(--text-light);
+            line-height: 1.7;
+            margin: 0 0 8px;
+        }
+        .thank-you-card .email-confirm {
+            font-weight: 600;
+            color: var(--primary);
+        }
+        .thank-you-actions {
+            margin-top: 32px;
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">31 Harbor Road</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#features">Features</a>
+                <a href="index.html#gallery">Gallery</a>
+                <a href="index.html#floorplan">Floor Plan</a>
+                <a href="index.html#location">Location</a>
+                <a href="index.html#contact" class="btn-nav">Schedule Showing</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Thank You Content -->
+    <section class="thank-you-section">
+        <div class="thank-you-card">
+            <div class="thank-you-icon">&#x2705;</div>
+            <h2>Request Sent!</h2>
+            <p>Thank you, <strong id="visitor-name">Guest</strong>.</p>
+            <p>We've received your showing request for <strong>31 Harbor Road</strong> and will respond within 24 hours to confirm your appointment.</p>
+            <p>A confirmation has been sent to <span class="email-confirm" id="visitor-email"></span>.</p>
+            <div class="thank-you-actions">
+                <a href="index.html#gallery" class="btn btn-secondary">View Gallery</a>
+                <a href="index.html" class="btn btn-primary">Back to Home</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-brand">31 Harbor Road</div>
+                    <p>Amagansett Waterfront Estate</p>
+                </div>
+                <div class="footer-right">
+                    <p>&copy; 2026 31 Harbor Road. All rights reserved.</p>
+                    <p class="disclaimer">Equal Housing Opportunity. All information deemed reliable but not guaranteed.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Pick up name/email from URL params
+        const params = new URLSearchParams(window.location.search);
+        const name = params.get('name') || 'Guest';
+        const email = params.get('email') || '';
+        document.getElementById('visitor-name').textContent = name;
+        if (email) {
+            document.getElementById('visitor-email').textContent = email;
+        } else {
+            document.getElementById('visitor-email').textContent = 'your email on file';
+        }
+    </script>
+</body>
+</html>

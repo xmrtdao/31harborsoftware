@@ -1,0 +1,227 @@
+[
+  {
+    "file": "01.jpg",
+    "width": 1920,
+    "height": 1080,
+    "category": "aerial",
+    "subcategory": "community",
+    "notes": "Aerial of NCC community with arrow pointing to 31 Harbor Road. Labeled '3 Bedroom 2 Bath Water Views', 'Clubhouse', 'Private Beachfront'. PRIME HERO photo.",
+    "useAs": "hero"
+  },
+  {
+    "file": "02.jpg",
+    "width": 1920,
+    "height": 1080,
+    "category": "exterior",
+    "subcategory": "cottage-front",
+    "notes": "Cottage exterior on gravel lot, side view with deck/balcony on upper level",
+    "useAs": "exterior"
+  },
+  {
+    "file": "03.jpg",
+    "width": 1920,
+    "height": 1080,
+    "category": "interior",
+    "subcategory": "living-room",
+    "notes": "Open living/kitchen with large nautilus mural, couch, TV, plants. Good lifestyle shot.",
+    "useAs": "interior"
+  },
+  {
+    "file": "04.jpg",
+    "width": 1920,
+    "height": 1080,
+    "category": "interior",
+    "subcategory": "kitchen",
+    "notes": "Galley kitchen, white cabinets, gas stove, water view through window",
+    "useAs": "interior"
+  },
+  {
+    "file": "05.jpg",
+    "width": 1920,
+    "height": 1080,
+    "category": "interior",
+    "subcategory": "bedroom-blue",
+    "notes": "Bedroom with teal bedding, coastal abstract art, twin nightstands",
+    "useAs": "interior"
+  },
+  {
+    "file": "06.jpg",
+    "width": 1920,
+    "height": 1080,
+    "category": "interior",
+    "subcategory": "bedroom-white",
+    "notes": "Primary bedroom with white/navy bedding, gold accent lamps, ocean abstract art, neighborhood view through window",
+    "useAs": "interior"
+  },
+  {
+    "file": "07.jpg",
+    "width": 1920,
+    "height": 1080,
+    "category": "outdoor",
+    "subcategory": "deck",
+    "notes": "Wood deck/patio with green Panton chairs, exercise bike, neighboring cottage visible",
+    "useAs": "exterior"
+  },
+  {
+    "file": "08.jpg",
+    "width": 1920,
+    "height": 1080,
+    "category": "exterior",
+    "subcategory": "cottage",
+    "notes": "Cottage exterior (back angle), gravel lot, white siding, stairs to upper deck",
+    "useAs": "exterior"
+  },
+  {
+    "file": "09.jpg",
+    "width": 1920,
+    "height": 1080,
+    "category": "exterior",
+    "subcategory": "cottage",
+    "notes": "Cottage exterior from side, gravel lot",
+    "useAs": "exterior"
+  },
+  {
+    "file": "10.jpg",
+    "width": 1920,
+    "height": 1080,
+    "category": "exterior",
+    "subcategory": "cottage-back",
+    "notes": "Cottage from rear showing the two-story side, neighboring cottage visible",
+    "useAs": "exterior"
+  },
+  {
+    "file": "11.jpg",
+    "width": 1920,
+    "height": 1080,
+    "category": "outdoor",
+    "subcategory": "beach",
+    "notes": "Sandy beach with catamaran anchored, kayaks on shore, multiple boats in bay. STUNNING B-roll.",
+    "useAs": "broll-beach"
+  },
+  {
+    "file": "12.jpg",
+    "width": 1920,
+    "height": 1080,
+    "category": "interior",
+    "subcategory": "bedroom",
+    "notes": "Bedroom interior",
+    "useAs": "interior"
+  },
+  {
+    "file": "13.jpg",
+    "width": 1920,
+    "height": 1080,
+    "category": "interior",
+    "subcategory": "unknown",
+    "notes": "Interior shot (not yet reviewed)",
+    "useAs": null
+  },
+  {
+    "file": "14.jpg",
+    "width": 1920,
+    "height": 1080,
+    "category": "interior",
+    "subcategory": "unknown",
+    "notes": "Interior shot (not yet reviewed)",
+    "useAs": null
+  },
+  {
+    "file": "15.jpg",
+    "width": 1920,
+    "height": 1080,
+    "category": "outdoor",
+    "subcategory": "water-view",
+    "notes": "Calm water view from beach, grass tufts, distant shoreline visible",
+    "useAs": "broll-water"
+  },
+  {
+    "file": "16.jpg",
+    "width": 1920,
+    "height": 1080,
+    "category": "exterior",
+    "subcategory": "unknown",
+    "notes": "Exterior (not yet reviewed)",
+    "useAs": null
+  },
+  {
+    "file": "17.jpg",
+    "width": 1920,
+    "height": 1080,
+    "category": "unknown",
+    "subcategory": "unknown",
+    "notes": "Not yet reviewed",
+    "useAs": null
+  },
+  {
+    "file": "18.jpg",
+    "width": 1920,
+    "height": 1080,
+    "category": "unknown",
+    "subcategory": "unknown",
+    "notes": "Not yet reviewed",
+    "useAs": null
+  },
+  {
+    "file": "19.jpg",
+    "width": 1920,
+    "height": 1080,
+    "category": "unknown",
+    "subcategory": "unknown",
+    "notes": "Not yet reviewed",
+    "useAs": null
+  },
+  {
+    "file": "20.jpg",
+    "width": 1920,
+    "height": 1080,
+    "category": "unknown",
+    "subcategory": "unknown",
+    "notes": "Not yet reviewed",
+    "useAs": null
+  },
+  {
+    "file": "21.jpg",
+    "width": 1920,
+    "height": 1080,
+    "category": "unknown",
+    "subcategory": "unknown",
+    "notes": "Not yet reviewed",
+    "useAs": null
+  },
+  {
+    "file": "22.jpg",
+    "width": 1920,
+    "height": 1080,
+    "category": "unknown",
+    "subcategory": "unknown",
+    "notes": "Not yet reviewed",
+    "useAs": null
+  },
+  {
+    "file": "23.jpg",
+    "width": 1920,
+    "height": 1080,
+    "category": "unknown",
+    "subcategory": "unknown",
+    "notes": "Not yet reviewed",
+    "useAs": null
+  },
+  {
+    "file": "24.jpg",
+    "width": 1440,
+    "height": 1080,
+    "category": "interior",
+    "subcategory": "kitchen",
+    "notes": "Galley kitchen, blue cabinets, gas stove, water view through window. Replaces white-cabinet 04.jpg.",
+    "useAs": "interior"
+  },
+  {
+    "file": "25.jpg",
+    "width": 1440,
+    "height": 1080,
+    "category": "interior",
+    "subcategory": "kitchen-alt",
+    "notes": "Blue cabinetry alternate angle — kitchen island, counter space. Second blue-cabinet shot.",
+    "useAs": "interior"
+  }
+]

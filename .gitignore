@@ -1,0 +1,20 @@
+﻿# Credentials must never be published. This repo is PUBLIC and serves GitHub
+# Pages, so anything committed here is world-readable and cached by CDNs.
+#
+# A real Resend key and Cloudflare account credentials were found sitting in
+# assets/ as .docx/.txt. They are deliberately not tracked. See SECRET.md.
+assets/*Resend*
+assets/*API Key*
+assets/*API Keys*
+**/*Resend and Cloudflare*
+*.key
+*.pem
+*.p12
+*.env
+.env
+!.env.example
+serve-test.log
+console.log*
+_orig.html
+_prep_push.mjs
+node_modules/
