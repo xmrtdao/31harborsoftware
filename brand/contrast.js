@@ -10,29 +10,39 @@
  */
 window.JOBBY_CONTRAST_PAIRS = [
   { sel: '.nav-links .btn', min: 4.5, name: 'nav CTA' },
+  { sel: '.nav-links a:not(.btn)', min: 4.5, name: 'nav link' },
   { sel: 'body', min: 4.5, name: 'body text' },
   { sel: 'h1', min: 3.0, name: 'h1' },
+  { sel: 'h1 em', min: 3.0, name: 'h1 accent' },
   { sel: 'h2', min: 3.0, name: 'h2' },
+  { sel: 'h3', min: 4.5, name: 'h3' },
   { sel: '.lede', min: 4.5, name: 'lede' },
   { sel: '.muted', min: 4.5, name: 'muted note' },
   { sel: '.eyebrow', min: 4.5, name: 'eyebrow' },
-  { sel: '.step p', min: 4.5, name: 'step body' },
-  { sel: '.track p', min: 4.5, name: 'track body' },
-  { sel: '.track-when', min: 4.5, name: 'track caption' },
-  { sel: '.rule-col li', min: 4.5, name: 'rule list item' },
-  { sel: '.rule-col h3', min: 3.0, name: 'rule heading' },
-  { sel: '.agent-name', min: 4.5, name: 'agent name' },
-  { sel: '.agent-role', min: 4.5, name: 'agent role' },
-  { sel: '.agent-line span:first-child', min: 4.5, name: 'agent card label' },
-  { sel: '.agent-line b', min: 4.5, name: 'agent card value' },
-  { sel: '.tag', min: 4.5, name: 'status tag' },
-  { sel: '.stamp', min: 4.5, name: 'status stamp' },
-  { sel: '.stat span', min: 4.5, name: 'stat caption' },
-  { sel: 'summary', min: 4.5, name: 'FAQ question' },
-  { sel: 'details p', min: 4.5, name: 'FAQ answer' },
-  { sel: 'footer', min: 4.5, name: 'footer' },
-  { sel: '.btn-ghost', min: 4.5, name: 'secondary button' },
+  { sel: '.chip', min: 4.5, name: 'status chip' },
+  { sel: '.chip b', min: 4.5, name: 'chip value' },
+  { sel: '.line .who', min: 4.5, name: 'console role label' },
+  { sel: '.line .msg', min: 4.5, name: 'console message' },
+  { sel: '.console-bar', min: 4.5, name: 'console chrome' },
+  { sel: '.product p', min: 4.5, name: 'product body' },
+  { sel: '.product-id', min: 4.5, name: 'product id' },
+  { sel: '.feature-list li', min: 4.5, name: 'feature bullet' },
+  { sel: '.badge-live', min: 4.5, name: 'live badge' },
+  { sel: '.badge-next', min: 4.5, name: 'not-ready badge' },
+  { sel: '.rm-when', min: 4.5, name: 'roadmap when' },
+  { sel: '.rm-what', min: 4.5, name: 'roadmap what' },
+  { sel: '.rm-row.shipping .rm-state', min: 4.5, name: 'roadmap live state' },
+  { sel: '.rm-row.building .rm-state', min: 4.5, name: 'roadmap building state' },
+  { sel: '.rm-row.planned .rm-state', min: 4.5, name: 'roadmap planned state' },
+  { sel: '.principle p', min: 4.5, name: 'principle body' },
+  { sel: '.principle h3 code', min: 4.5, name: 'principle number' },
+  { sel: '.fact dt', min: 4.5, name: 'fact label' },
+  { sel: '.fact dd', min: 4.5, name: 'fact value' },
   { sel: '.btn', min: 4.5, name: 'primary button' },
+  { sel: '.btn-ghost', min: 4.5, name: 'secondary button' },
+  { sel: 'footer', min: 4.5, name: 'footer' },
+  { sel: '.foot-links a', min: 4.5, name: 'footer link' },
+  { sel: '.brand-name small', min: 4.5, name: 'brand tagline' },
 ];
 
 window.JOBBY_MEASURE_CONTRAST = function measureContrast() {
@@ -49,6 +59,8 @@ window.JOBBY_MEASURE_CONTRAST = function measureContrast() {
 
   // Walk up for the first opaque background: a card sits on the page tint, and
   // comparing text against the wrong layer is how false passes happen.
+  // The fallback is the body, not white — this site is dark, so a hardcoded
+  // white fallback would report every light-on-dark pair as a failure.
   const bgOf = (el) => {
     let n = el;
     while (n && n !== document.documentElement) {
@@ -56,7 +68,9 @@ window.JOBBY_MEASURE_CONTRAST = function measureContrast() {
       if (c && (c.length < 4 || c[3] > 0.85)) return c.slice(0, 3);
       n = n.parentElement;
     }
-    return [255, 255, 255];
+    const bodyBg = parse(getComputedStyle(document.body).backgroundColor);
+    if (bodyBg && (bodyBg.length < 4 || bodyBg[3] > 0.85)) return bodyBg.slice(0, 3);
+    return [0, 0, 0];
   };
 
   const results = [];
