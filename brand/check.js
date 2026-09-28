@@ -94,7 +94,40 @@ async function main() {
   }
   // The company page ships no JavaScript. A script tag here would mean a
   // behaviour nobody can name, so its absence is asserted rather than assumed.
-  check('no JavaScript on the company page', !/<script[\s>]/.test(html), html.match(/<script[^>]*>/g));
+  // (Cloudflare Pages may inject its own analytics beacon; only first-party
+  // script references are asserted against.)
+  check('no first-party JavaScript on the company page',
+    !/<script(?![^>]*cloudflareinsights)/i.test(html), html.match(/<script[^>]*>/g));
+
+  console.log('\n=== assets are content-versioned ===');
+  // This is the check whose absence let a broken deploy ship. GitHub Pages lets
+  // Cloudflare rewrite `no-cache` to `max-age=14400`, so a visitor who loaded
+  // the site before a redesign kept the old stylesheet for four hours and got
+  // the new markup rendered with the old CSS. The CDN was serving correct bytes
+  // the whole time — the browser never asked. A content-versioned URL makes that
+  // impossible, so every local asset reference must carry ?v= and it must match
+  // the file it points at.
+  // Local asset references are relative (brand/style.css), not absolute, and
+  // anything with a scheme, a protocol-relative prefix, or a fragment is not a
+  // local file we control the cache key for.
+  const localRefs = [...html.matchAll(
+    /(?:href|src)="((?!https?:|\/\/|#|mailto:)[^"?#]+\.(?:css|js))(?:\?v=([0-9a-f]+))?"/g)];
+  check('the page references at least one local stylesheet', localRefs.length > 0, localRefs.length);
+  for (const [, rel, version] of localRefs) {
+    const path = '/' + rel.replace(/^\//, '');
+    if (!version) {
+      check(`${rel} is versioned`, false, 'no ?v= — a stale cached copy could be reused');
+      continue;
+    }
+    // Fetch the versioned URL and the bare URL; both must serve the same bytes.
+    const [vRes, bareRes] = await Promise.all([fetch(BASE + path + '?v=' + version), fetch(BASE + path)]);
+    const [vBuf, bareBuf] = await Promise.all([vRes.arrayBuffer(), bareRes.arrayBuffer()]);
+    check(`${rel}?v=${version} serves`, vRes.ok, vRes.status);
+    const a = new Uint8Array(vBuf), b = new Uint8Array(bareBuf);
+    const sameBytes = a.length === b.length && a.every((x, i) => x === b[i]);
+    check(`${rel}?v=${version} matches the unversioned file`, sameBytes,
+      sameBytes ? undefined : 'versioned and bare URLs differ — the edge is serving something stale');
+  }
 
   console.log('\n=== every referenced asset resolves ===');
   const refs = [...html.matchAll(/(?:href|src)="([^"]+)"/g)].map(m => m[1])
