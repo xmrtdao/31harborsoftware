@@ -1,9 +1,16 @@
 # 31 Harbor Road — Comprehensive Sales Strategy
 
+> **⚠️ IMPORTANT — July 2026: ALL DISTRIBUTION HALTED per David Elze directive.**
+> This document is retained for historical reference only. Do not execute any strategy described here without David's explicit per-item approval.
+> The property is a **Douglas Elliman exclusive** (MLS #422823, listing agent Julie Gauger, East Hampton office).
+> Key corrections: "Waterfront" → Bay View + Association Beach Rights. "First public offering" hook RETIRED. House built 2018 (not 1950s). Do not publish 3.35-acre lot figure. Role: broker-coordinated demand generation only — every CTA points to Elliman listing. No outbound email to real people without David's approval.
+> See fleet shared context key `31harbor_course_correction_july_2026` for full directive.
+
 **Property:** 31 Harbor Road, Amagansett, NY 11930  
 **Price:** $750,000 (reduced from $895,000)  
-**Date:** June 9, 2026  
+**Date:** June 9, 2026 (original) — **HALTED July 2026**  
 **Owner:** David Elze  
+**Listing:** Douglas Elliman exclusive — MLS #422823 (Julie Gauger, East Hampton)
 
 ---
 

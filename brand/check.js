@@ -51,8 +51,11 @@ async function main() {
   const listingHtml = listing.ok ? await listing.text() : '';
   check('archived listing serves', listing.ok, listing.status);
   check('archive is still the property listing', /Amagansett|Harbor Road/i.test(listingHtml));
-  check('listing contact form still targets the relay',
-    /relay\.mobilemonero\.com\/api\/contact\/31harbor/.test(listingHtml));
+  // The form posts from listing/js/main.js, not inline in the page, and targets
+  // inbox.31harbor.com rather than the relay host.
+  const listingJs = await (await fetch(BASE + '/listing/js/main.js')).text();
+  check('listing contact form still posts to the relay',
+    /https:\/\/(inbox\.31harbor\.com|relay\.mobilemonero\.com)\/api\/contact\/31harbor/.test(listingJs));
   check('listing has no absolute paths that would break under /listing/',
     !/(?:href|src)="\//.test(listingHtml));
 

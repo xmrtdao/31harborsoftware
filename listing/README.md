@@ -1,166 +1,81 @@
-# Sea Hampton House — Luxury Waterfront Estate
+# 31 Harbor Road — Napeague Bay View Cottage
 
-**Listing Website for GitHub Pages**
+**Listing website:** https://31harbor.com (GitHub Pages, custom domain)
+
+> **NOTE — July 2026: ALL DISTRIBUTION HALTED per David Elze directive.**
+> This site is retained for reference. Do not distribute or promote without David's explicit approval.
+> The property is a **Douglas Elliman exclusive** (MLS #422823, listing agent Julie Gauger, East Hampton office).
+> Key corrections applied: "Waterfront" → Bay View + Association Beach Rights. "First public offering" hook RETIRED. House built 2018.
 
 ---
 
 ## 🏠 Property Details
 
-- **Price:** $4,850,000
-- **Bedrooms:** 5
-- **Bathrooms:** 4.5
-- **Square Feet:** 4,200
-- **Lot Size:** 0.52 acres
-- **Water Frontage:** 120 feet
-- **MLS:** #[NUMBER]
+- **Address:** 31 Harbor Road, Amagansett, NY 11930 (Napeague Camping Club)
+- **Price:** $750,000
+- **Bedrooms:** 3
+- **Bathrooms:** 2
+- **Square Feet:** 960
+- **House Built:** 2018
+- **Water:** Bay View + Association Beach Rights
+- **Listing:** Douglas Elliman exclusive — MLS #422823
+- **Listing Agent:** Julie Gauger, East Hampton office (631-793-3133)
+- **Elliman Listing:** https://www.elliman.com/listing/31-harbor-rd-amagansett-ny-11930/30955889
 
----
+## 🌊 The Community
 
-## 📁 Asset Organization
+Napeague is one of the least populated and least developed parts of the Hamptons — a narrow strip of land between the Atlantic Ocean and Gardiners Bay. The Napeague Camping Club evolved from a 1950s campground into a private community of working waterfront families.
 
-### From Google Drive
-**Source:** https://drive.google.com/drive/folders/18Jk7v1IHaTyQQrwoOtHmoul5nlE94atV
+**Highlights:**
 
-**Copy these files to `assets/images/`:**
-
-| File in Drive | Save As | Description |
-|---------------|---------|-------------|
-| [Hero/Exterior photo] | `hero-exterior.jpg` | Main hero image |
-| [Living room] | `living-room.jpg` | Living area |
-| [Kitchen] | `kitchen.jpg` | Gourmet kitchen |
-| [Master bedroom] | `master-bedroom.jpg` | Primary suite |
-| [Bathroom] | `bathroom.jpg` | Spa bathroom |
-| [Dock/Water] | `dock.jpg` | Private dock |
-| [Pool] | `pool.jpg` | Pool area |
-| [Dining room] | `dining.jpg` | Dining area |
-| [Map] | `location-map.jpg` | Location/area map |
-
-**Copy to `assets/docs/`:**
-- Floor plan PDF → `floorplan.pdf`
-
----
-
-## 🚀 Deploy to GitHub Pages
-
-### 1. Add Assets from Google Drive
-
-```bash
-# Download images from Drive folder
-# Save to: ~/sea-hampton-house/assets/images/
-
-# Download floor plan
-# Save to: ~/sea-hampton-house/assets/docs/
-```
-
-### 2. Update Property Details
-
-Edit `index.html`:
-- Replace `[Street Address]` with actual address
-- Replace `[Agent Name]` with listing agent
-- Replace `[Brokerage Name]` with brokerage
-- Update phone, email, website
-- Add MLS number
-- Update price if needed
-
-### 3. Commit and Push
-
-```bash
-cd ~/sea-hampton-house
-
-git add .
-git commit -m "Initial commit: Sea Hampton House listing website"
-git push -u origin main
-```
-
-### 4. Enable GitHub Pages
-
-1. Go to: https://github.com/xmrtdao/sea-hampton-house/settings/pages
-2. Source: Deploy from branch
-3. Branch: `main` / `/ (root)`
-4. Click **Save**
-
-**Live URL:** https://xmrtdao.github.io/sea-hampton-house
+- Private community between East Hampton and Montauk (~15 min to each)
+- World-class kiteboarding and windsurfing at your doorstep
+- Atlantic Ocean beaches within walking distance
+- Gardiners Bay access via association beach rights
+- Nature preserves and hiking trails nearby
+- Authentic working waterfront culture — not luxury development
 
 ---
 
 ## 📋 Website Sections
 
-1. **Hero** — Full-screen exterior photo with price and CTA
-2. **Features Bar** — 5/4.5/4,200/0.52/120' stats
-3. **About** — Property description + living room photo
-4. **Features Grid** — 6 premium features with icons
-5. **Gallery** — 8-photo grid with hover effects
-6. **Floor Plan** — PDF or placeholder with room breakdown
-7. **Location** — Neighborhood highlights + map
-8. **Contact** — Agent info + showing request form
-
----
-
-## 🎨 Design Features
-
-- **Color Scheme:**
-  - Primary: Navy blue (#1a3a52)
-  - Accent: Gold (#c9a962)
-  - Clean white backgrounds
-
-- **Typography:**
-  - Headings: Playfair Display (serif, luxury feel)
-  - Body: Inter (sans-serif, modern readability)
-
-- **Responsive:** Mobile, tablet, desktop optimized
-
-- **Interactive:**
-  - Smooth scroll navigation
-  - Hover effects on gallery
-  - Form submission handler
-  - Parallax hero section
-  - Scroll animations
-
----
-
-## 📝 Next Steps
-
-### Immediate
-- [ ] Download all images from Google Drive
-- [ ] Add floor plan PDF
-- [ ] Update agent/contact information
-- [ ] Add actual property address
-- [ ] Add MLS number
-- [ ] Test contact form
-
-### Optional Enhancements
-- [ ] Add virtual tour link (Matterport, etc.)
-- [ ] Add video walkthrough
-- [ ] Integrate with MLS/IDX
-- [ ] Add mortgage calculator
-- [ ] Connect form to CRM/email service
-- [ ] Add neighborhood guide PDF
-- [ ] School district information
-- [ ] Property disclosure documents
-
----
+1. **Hero** — Full-screen photo, price, and showing CTA
+2. **Stats Bar** — 3 bed / 2 bath / 960 sq ft / bay view / Douglas Elliman exclusive
+3. **About** — Napeague community overview
+4. **Features Grid** — 6 feature cards (community, cottage, kiteboarding, culture, nature)
+5. **Gallery** — 31 photos, filterable (exterior / interior / bay view) with lightbox
+6. **Floor Plan** — Level 1 and Level 2 plans
+7. **Location** — Napeague neighborhood highlights
+8. **Schedule Showing** — Contact via Douglas Elliman listing
 
 ## 🛠️ Tech Stack
 
 - **HTML5** — Semantic markup
 - **CSS3** — Custom styles, no framework
 - **JavaScript** — Vanilla JS, no dependencies
-- **GitHub Pages** — Free hosting
-- **Google Fonts** — Playfair Display + Inter
+- **Hosting** — GitHub Pages with custom domain (`CNAME` → `31harbor.com`)
 
----
+## 🚀 Deployment
+
+The site deploys automatically from the `main` branch via GitHub Pages.
+
+```bash
+git add .
+git commit -m "Update listing site"
+git push origin main
+```
+
+GitHub Pages settings: repo → **Settings → Pages** → deploy from `main` / root.
+DNS for `31harbor.com` points to GitHub Pages; the `CNAME` file in this repo holds the domain.
 
 ## 📞 Contact
 
-**Listing Agent:** [Agent Name]  
-**Brokerage:** [Brokerage Name]  
-**Phone:** (555) 123-4567  
-**Email:** agent@brokerage.com
+**Listing Agent:** Julie Gauger — Douglas Elliman, East Hampton Office
+- **Phone:** (631) 793-3133
+- **Elliman Listing:** https://www.elliman.com/listing/31-harbor-rd-amagansett-ny-11930/30955889
+- **Address:** 31 Harbor Road, Amagansett, NY 11930
 
 ---
 
-## License
-
-Property listing website for Sea Hampton House. All rights reserved.
-
-© 2026 [Brokerage Name]. Equal Housing Opportunity.
+© 2026 31 Harbor Road. All rights reserved.
+Equal Housing Opportunity. All information deemed reliable but not guaranteed.
