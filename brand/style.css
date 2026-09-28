@@ -156,7 +156,10 @@ a { color: var(--accent); }
 .btn-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 2rem; }
 
 /* -- Hero ---------------------------------------------------------- */
-.hero { padding: clamp(64px, 11vw, 132px) 0 clamp(48px, 7vw, 88px); }
+/* The nav is sticky and ~64px tall, so the hero does not need a canyon above it.
+ * This was clamp(64px, 11vw, 132px), which put 132px of dead space between the
+ * navbar and the first line at desktop widths. */
+.hero { padding: clamp(40px, 5vw, 64px) 0 clamp(44px, 6vw, 80px); }
 .hero h1 { max-width: 15ch; }
 .hero h1 em { font-style: normal; color: var(--accent); }
 .hero-lede { max-width: 54ch; }
