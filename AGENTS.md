@@ -50,16 +50,43 @@ framework. Do not introduce one to make a change easier — the deployment is
 GitHub Pages reading these files directly, and a build step means the repo and
 the served site can disagree.
 
-**The stylesheet is cache-busted by hash in the HTML:**
+**The stylesheet is cache-busted by a content hash in the HTML:**
 
 ```html
-<link rel="stylesheet" href="brand/style.css?v=3f9c2a71e5">
+<link rel="stylesheet" href="brand/style.css?v=e071cf930a">
 ```
 
-**Bump that hash whenever `brand/style.css` changes.** Without it the edit
-reaches nobody — GitHub Pages serves the old file until the query changes. This
-is the same failure mode as Cloudflare edge-caching a script on the relay
-dashboard, and it has bitten twice.
+**That stamp is the first 10 hex of the SHA-256 of `brand/style.css`.** Do not
+edit it by hand and do not bump it by hand:
+
+```bash
+node tools/css-stamp.mjs .          # verify — exits non-zero if stale
+node tools/css-stamp.mjs . --fix    # rewrite the stamp from the file
+```
+
+Run `--fix` after every edit to `brand/style.css`. The verifier is the last line
+of defence, not the mechanism.
+
+### Why this is a script and not a habit
+
+The stamp used to be a hand-written literal to be bumped by hand, and the bump
+was forgotten. The failure was invisible and total: GitHub Pages and Cloudflare
+both served the previous file under the previous query string, the browser never
+revalidated, and **the partner portraits rendered with no CSS applied at all** —
+`.team` fell back to `display: block`, the images loaded at their intrinsic
+512px, and the page scrolled 256px sideways on a 360px screen.
+
+What made it expensive was not the stale CSS. It was that the *symptom was
+diagnosed as a layout bug*. The layout was fine. There was a rule in the file the
+browser never received, and the only way to tell the difference was to count
+`document.styleSheets[...].cssRules.length` against the file on disk — 109 versus
+115.
+
+**When a rendering bug appears only on the live site and not locally, compare the
+CSS the browser actually parsed against the file on disk before changing any
+layout.** A query-string cache bust makes those two silently diverge, and
+`fetch()` from a terminal will show you the fresh file while the browser shows
+you the stale one.
 
 ---
 
@@ -142,7 +169,7 @@ crop, which reliably decapitates head-and-shoulders photos.
 ## Before committing
 
 - `git status` — `listing/` changes mean you touched the archived site
-- The `?v=` hash matches `brand/style.css`
+- The `?v=` hash matches `brand/style.css` — `node tools/css-stamp.mjs .`
 - No credential, key or token appears anywhere. `relay/.env` is a different repo
   and is gitignored; nothing from it belongs here.
 - The listing's distribution-halt notice is still present and intact.
