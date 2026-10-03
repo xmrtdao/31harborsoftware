@@ -10,6 +10,14 @@ everything they touch.
 
 ---
 
+## Partners
+
+**Joe Lee** and **Cory Gray**.
+
+**Calle 442, La Fortuna, Costa Rica 21007**
+
+---
+
 ## Products
 
 | | Product | What it does | Status |
@@ -19,6 +27,9 @@ everything they touch.
 | 03 | **[Suite](https://xmrtdao.github.io/suite)** | The operations surface. Every agent, tool call, cron job and message in one place, with service health and restarts. | **Live** |
 
 Source for GrayTech: [github.com/xmrtdao/graytech](https://github.com/xmrtdao/graytech)
+
+The three are one company rather than three products in a portfolio: Jobby and
+GrayTech are the things we build, and Suite is where both of them are run.
 
 ---
 
