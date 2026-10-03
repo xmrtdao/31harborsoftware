@@ -4,18 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>31 Harbor &mdash; We build agents that work</title>
-  <meta name="description" content="31 Harbor is a software company building autonomous agents. Jobby is our flagship: a personal job agent that works a candidate's corner until income is secured.">
-  <meta name="keywords" content="31 Harbor, software company, AI agents, autonomous agents, job agent, Jobby McJobberson">
+  <meta name="description" content="31 Harbor is a software company building autonomous agents and the systems that run them. Three products shipping: Jobby, a personal job agent that works a candidate's corner until income is secured; GrayTech Security, face recognition that calibrates itself on your traffic; and Suite, the operations surface for the fleet.">
+  <meta name="keywords" content="31 Harbor, software company, AI agents, autonomous agents, job agent, Jobby McJobberson, face recognition, biometric identification, GrayTech Security, agent operations, Suite">
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="31 Harbor &mdash; We build agents that work">
-  <meta property="og:description" content="A software company building autonomous agents. Jobby is our flagship.">
+  <meta property="og:description" content="A software company building autonomous agents and the systems that run them. Jobby, GrayTech Security and Suite are shipping.">
   <meta property="og:url" content="https://31harbor.com/">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="brand/style.css?v=eb711bdf8d">
+  <link rel="stylesheet" href="brand/style.css?v=3f9c2a71e5">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -43,7 +43,8 @@
       <div class="wrap">
         <div class="status-row">
           <span class="chip"><span class="dot dot-live" aria-hidden="true"></span> Jobby <b>live</b></span>
-          <span class="chip">agent <b>jobby-001</b></span>
+          <span class="chip"><span class="dot dot-live" aria-hidden="true"></span> GrayTech <b>live</b></span>
+          <span class="chip"><span class="dot dot-live" aria-hidden="true"></span> Suite <b>live</b></span>
           <span class="chip">autonomy <b>user-controlled</b></span>
         </div>
 
@@ -83,7 +84,7 @@
       <div class="wrap">
         <div class="section-head">
           <p class="eyebrow">Products</p>
-          <h2>One product shipping. More in the build.</h2>
+          <h2>Three things shipping. More in the build.</h2>
           <p class="lede">
             We publish a product here when it works, and say plainly when
             something is not ready. We do not collect email addresses for
@@ -114,9 +115,52 @@
             <a class="btn" href="https://jobby.mobilemonero.com">Open Jobby</a>
           </article>
 
+          <article class="product is-live">
+            <div class="product-top">
+              <span class="product-id">02 &mdash; GrayTech Security</span>
+              <span class="badge badge-live">Live</span>
+            </div>
+            <h3>Know who is in the room</h3>
+            <p>
+              Face detection and recognition over a monitored scene. People cross
+              a scan line, each one is turned into a 512-number vector and matched
+              against enrolled references by cosine similarity &mdash; arriving as a
+              named identity with a confidence score, or <b>UNKNOWN</b> if nobody
+              clears the bar. The threshold is not a guess: every score is logged
+              and the operating point is derived from where errors actually occur
+              in your own traffic.
+            </p>
+            <ul class="feature-list">
+              <li>Detection and recognition networks; the model is fixed, not retrained</li>
+              <li>Self-calibrating threshold &mdash; false accepts and false rejects measured, not assumed</li>
+              <li>Correcting an identification enriches that profile immediately</li>
+              <li>Cannot enrol a stranger: adaptation only ever touches people already known</li>
+            </ul>
+            <a class="btn" href="https://graytech.mobilemonero.com">Open GrayTech</a>
+          </article>
+
+          <article class="product is-live">
+            <div class="product-top">
+              <span class="product-id">03 &mdash; Suite</span>
+              <span class="badge badge-live">Live</span>
+            </div>
+            <h3>Where the agents are run</h3>
+            <p>
+              The operations surface. Every agent, every tool call, every cron job
+              and every message in one place &mdash; with the restart control the
+              supervisor already had, exposed to the people who own the stack.
+            </p>
+            <ul class="feature-list">
+              <li>Live view of the fleet and what each agent is doing</li>
+              <li>Service health and restarts, one click per service</li>
+              <li>The same audit trail the products themselves expose</li>
+            </ul>
+            <a class="btn" href="https://xmrtdao.github.io/suite">Open Suite</a>
+          </article>
+
           <article class="product">
             <div class="product-top">
-              <span class="product-id">02 &mdash; In the build</span>
+              <span class="product-id">04 &mdash; In the build</span>
               <span class="badge badge-next">Not ready</span>
             </div>
             <h3>Further agents</h3>
@@ -147,6 +191,16 @@
             <span class="rm-what">Jobby &mdash; dossier, tracks, plan, chat, audited outreach</span>
             <span class="rm-state">Live</span>
           </div>
+          <div class="rm-row shipping">
+            <span class="rm-when">Shipping</span>
+            <span class="rm-what">GrayTech Security &mdash; detection, recognition, self-calibrating threshold</span>
+            <span class="rm-state">Live</span>
+          </div>
+          <div class="rm-row shipping">
+            <span class="rm-when">Shipping</span>
+            <span class="rm-what">Suite &mdash; fleet operations, service health, restart control</span>
+            <span class="rm-state">Live</span>
+          </div>
           <div class="rm-row building">
             <span class="rm-when">In progress</span>
             <span class="rm-what">Reply tracking and follow-up scheduling from a connected mailbox</span>
@@ -157,9 +211,14 @@
             <span class="rm-what">Contract and invoice handling for the consulting track</span>
             <span class="rm-state">Building</span>
           </div>
+          <div class="rm-row building">
+            <span class="rm-when">In progress</span>
+            <span class="rm-what">GrayTech multi-site: several cameras, one operating point</span>
+            <span class="rm-state">Building</span>
+          </div>
           <div class="rm-row planned">
             <span class="rm-when">Next</span>
-            <span class="rm-what">Second product. Unannounced until it is real.</span>
+            <span class="rm-what">Further agents. Unannounced until they are real.</span>
             <span class="rm-state">Planned</span>
           </div>
         </div>
@@ -226,9 +285,9 @@
 
         <dl class="facts">
           <div class="fact"><dt>Focus</dt><dd>Autonomous agents with operator control</dd></div>
-          <div class="fact"><dt>Flagship</dt><dd>Jobby McJobberson</dd></div>
-          <div class="fact"><dt>Stack</dt><dd>Node, Postgres, local-first inference</dd></div>
-          <div class="fact"><dt>App</dt><dd><a href="https://jobby.mobilemonero.com">jobby.mobilemonero.com</a></dd></div>
+          <div class="fact"><dt>Products</dt><dd>Jobby &middot; GrayTech Security &middot; Suite</dd></div>
+          <div class="fact"><dt>Stack</dt><dd>Node, Postgres, Python, local-first inference</dd></div>
+          <div class="fact"><dt>Live at</dt><dd><a href="https://jobby.mobilemonero.com">Jobby</a> &middot; <a href="https://graytech.mobilemonero.com">GrayTech</a> &middot; <a href="https://xmrtdao.github.io/suite">Suite</a></dd></div>
         </dl>
       </div>
 

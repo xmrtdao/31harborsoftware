@@ -223,7 +223,13 @@ section.band { border-block: 1px solid var(--line); background: rgba(14, 17, 20,
 
 /* Products */
 .products { display: grid; gap: 18px; }
-@media (min-width: 900px) { .products { grid-template-columns: 1.35fr .65fr; } }
+/* Two equal columns, not the old 1.35fr .65fr.
+   That split was sized for exactly two cards: one wide flagship, one narrow
+   "not ready" placeholder. With four products it would give Jobby 1.35 and
+   squeeze GrayTech, Suite and the placeholder into a third of the width.
+   Equal columns scale with whatever is actually in the grid. */
+@media (min-width: 760px) { .products { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1180px) { .products { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 .product {
   border: 1px solid var(--line);
   border-radius: 12px;
