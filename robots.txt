@@ -1,0 +1,24 @@
+# robots.txt for 31harbor.com
+#
+# The company site is meant to be found. The archived property listing is not:
+# its distribution was halted in July 2026 and it is retained for reference only,
+# so it is disallowed rather than left to compete in search results for an
+# inactive listing.
+
+User-agent: *
+Allow: /
+Allow: /listing/
+
+# Inactive real-estate listing. Retained for reference, not for distribution,
+# and actively harmful in search results: a stale $750,000 listing ranking
+# above the company is worse for 31 Harbor than no listing at all.
+Disallow: /listing/
+
+# Nothing here is user-generated or session-scoped, but these should never be
+# indexed even if they are ever served from this origin.
+Disallow: /api/
+Disallow: /*?utm_
+Disallow: /*?fbclid
+Disallow: /*?gclid
+
+Sitemap: https://31harbor.com/sitemap.xml
