@@ -40,7 +40,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="brand/style.css?v=e071cf930a">
+  <link rel="stylesheet" href="brand/style.css?v=af353a53bb">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -348,6 +348,31 @@
           <div class="btn-row" style="justify-content:center">
             <a class="btn" href="mailto:contactus@31harbor.com">contactus@31harbor.com</a>
             <a class="btn btn-ghost" href="tel:+12027980610">202-798-0610</a>
+          </div>
+
+          <!-- Booking. Added after the contact row rather than as a third button
+               beside it, because the copy above promises "both open something you
+               already have" and a hosted scheduler is a third thing, not a fourth
+               button competing with the two. -->
+          <div class="consult" id="consult">
+            <h3>Book a 30-minute consultation</h3>
+            <p>
+              For questions that need a calendar rather than an email thread. Pick a
+              time and Calendly holds the slot; the invite carries the video link.
+            </p>
+            <!-- Plain link, not the inline embed widget. The embed renders a script
+                 iframe and needs JS to work; this is a static site whose whole point
+                 is that it serves without a build step. A link cannot break, cannot
+                 cost a request, and survives Calendly being down. -->
+            <a class="btn consult-btn"
+               href="https://calendly.com/xmrtnet/30min?hide_gdpr_banner=1"
+               target="_blank" rel="noopener">
+              Get on our calendar
+            </a>
+            <p class="consult-note">
+              Opens calendly.com in a new tab. Nothing on this site is submitted
+              anywhere.
+            </p>
           </div>
         </div>
       </div>

@@ -367,6 +367,26 @@ section.band { border-block: 1px solid var(--line); background: rgba(14, 17, 20,
 }
 .cta .btn { margin-top: .8rem; }
 
+/* Consultation block. Sits inside the contact CTA but is visually its own thing:
+   the two buttons above it open a mail client or a dialler, and this one opens a
+   scheduler, so a hairline and some air keeps them from reading as a set of three.
+   .cta .btn sets margin-top, which would indent this button oddly against its own
+   copy, so it is reset here. */
+.consult {
+  max-width: 46rem;
+  margin: 3rem auto 0;
+  padding-top: 2rem;
+  border-top: 1px solid var(--line);
+}
+.consult h3 { font-size: 1.05rem; font-weight: 600; margin: 0 0 .5rem; }
+.consult p { font-size: .92rem; color: var(--ink-3); margin: 0 0 1rem; max-width: 54ch; }
+.consult-btn { margin-top: 0; }
+/* Small enough that the note does not compete with the button above it. */
+.consult-note { font-size: .8rem; margin: .8rem 0 0; color: var(--ink-3); opacity: .8; }
+@media (max-width: 480px) {
+  .consult { margin-top: 2.2rem; padding-top: 1.6rem; }
+}
+
 /* Footer */
 footer { border-top: 1px solid var(--line); padding: 34px 0; font-size: .87rem; color: var(--ink-3); }
 .foot-inner { display: flex; flex-wrap: wrap; gap: 14px 26px; align-items: center; justify-content: space-between; }
