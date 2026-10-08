@@ -1,10 +1,8 @@
-# 31 Harbor
+# 31Harbor Technical Solutions
 
 **We build agents that actually work.**
 
-31 Harbor is a software company. We build autonomous agents that own an outcome
-end to end — no waiting for permission, no vague advice, and an audit trail on
-everything they touch.
+31Harbor Technical Solutions is a holistic hardware and software firm. We build autonomous agents that own an outcome end to end — no waiting for permission, no vague advice, and an audit trail on everything they touch.
 
 🌐 **https://31harbor.com**
 
@@ -12,7 +10,7 @@ everything they touch.
 
 ## Partners
 
-**Joe Lee** and **Cory Gray**.
+**Joseph Andrew Lee** (Harvard graduate, Agent Harness Architect) and **Cory Gray** (Electrical Engineer, Fabricator, Founder of GrayTech).
 
 **Calle 442, La Fortuna, Costa Rica 21007**
 
