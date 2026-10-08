@@ -379,7 +379,7 @@ section.band { border-block: 1px solid var(--line); background: rgba(14, 17, 20,
   border-top: 1px solid var(--line);
 }
 .consult h3 { font-size: 1.05rem; font-weight: 600; margin: 0 0 .5rem; }
-.consult p { font-size: .92rem; color: var(--ink-3); margin: 0 0 1rem; max-width: 54ch; }
+.consult p { font-size: .92rem; color: var(--ink-3); margin: 0 0 1rem; max-width: 54ch; text-align: center; }
 .consult-btn { margin-top: 0; }
 /* Small enough that the note does not compete with the button above it. */
 .consult-note { font-size: .8rem; margin: .8rem 0 0; color: var(--ink-3); opacity: .8; }
