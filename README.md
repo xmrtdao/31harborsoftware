@@ -22,7 +22,7 @@
 |---|---|---|---|
 | 01 | **[Jobby McJobberson](https://jobby.mobilemonero.com)** | A personal job agent. Upload a resume, get a full dossier, an honest read on which income tracks your background supports, then sourced roles, researched targets, written outreach and follow-up — until income is secured. | **Live** |
 | 02 | **[GrayTech Security](https://graytech.mobilemonero.com)** | Face detection and recognition over a monitored scene. 512-d embeddings matched by cosine similarity to enrolled references, with a threshold derived from observed traffic rather than a generic default. | **Live** |
-| 03 | **[Suite](https://xmrtdao.github.io/suite)** | The operations surface. Every agent, tool call, cron job and message in one place, with service health and restarts. | **Live** |
+| 03 | **[Suite](https://suite.mobilemonero.com/suite/)** | The operations surface. Every agent, tool call, cron job and message in one place, with service health and restarts. | **Live** |
 
 Source for GrayTech: [github.com/xmrtdao/graytech](https://github.com/xmrtdao/graytech)
 
