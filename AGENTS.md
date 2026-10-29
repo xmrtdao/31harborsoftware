@@ -34,12 +34,14 @@ kept below the fold and in the README, never removed, and never promoted.
 
 - **Partners:** Joe Lee, Cory Gray
 - **Address:** Calle 442, La Fortuna, Costa Rica 21007
-- **Products:** Jobby (job agent), GrayTech Security (face recognition), Suite
-  (agent operations)
+- **Products:** Jobby (job agent), GrayTech Security (face recognition), Atreyus
+  (electrical takeoff from plan sets), Suite (agent operations)
 - **Stack:** Node, Postgres, Python, local-first inference. No cloud dependency
   for the core.
 
 Source for GrayTech lives in its own repo: `github.com/xmrtdao/graytech`.
+
+Source for Atreyus lives in its own repo: `github.com/xmrtdao/atreyus`.
 
 ---
 

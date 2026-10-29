@@ -23,11 +23,13 @@
 | 01 | **[Jobby McJobberson](https://jobby.mobilemonero.com)** | A personal job agent. Upload a resume, get a full dossier, an honest read on which income tracks your background supports, then sourced roles, researched targets, written outreach and follow-up — until income is secured. | **Live** |
 | 02 | **[GrayTech Security](https://graytech.mobilemonero.com)** | Face detection and recognition over a monitored scene. 512-d embeddings matched by cosine similarity to enrolled references, with a threshold derived from observed traffic rather than a generic default. | **Live** |
 | 03 | **[Suite](https://suite.mobilemonero.com/suite/)** | The operations surface. Every agent, tool call, cron job and message in one place, with service health and restarts. | **Live** |
+| 04 | **[Atreyus](https://atreyus.mobilemonero.com)** | Electrical takeoff from plan sets. Every quantity derives from a positioned component, and the marks are inspected before anything counts. | **Live** |
 
 Source for GrayTech: [github.com/xmrtdao/graytech](https://github.com/xmrtdao/graytech)
+Source for Atreyus: [github.com/xmrtdao/atreyus](https://github.com/xmrtdao/atreyus)
 
-The three are one company rather than three products in a portfolio: Jobby and
-GrayTech are the things we build, and Suite is where both of them are run.
+The four are one company rather than four products in a portfolio: Jobby,
+GrayTech and Atreyus are the things we build, and Suite is where they are run.
 
 ---
 
