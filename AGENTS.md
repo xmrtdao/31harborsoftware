@@ -34,8 +34,11 @@ kept below the fold and in the README, never removed, and never promoted.
 
 - **Partners:** Joe Lee, Cory Gray
 - **Address:** Calle 442, La Fortuna, Costa Rica 21007
-- **Products:** Jobby (job agent), GrayTech Security (face recognition), Atreyus
-  (electrical takeoff from plan sets), Suite (agent operations)
+- **Products:** Jobby (job agent), GrayTech (sovereign security: TAC-OPS mesh
+  console, Spatial Sentinel, AstraGaze recognition), Atreyus (electrical takeoff
+  from plan sets), Suite (agent operations), Elze Contracts (contract
+  intelligence: analysis, lease builder, redline export, per-attorney
+  preference learning)
 - **Stack:** Node, Postgres, Python, local-first inference. No cloud dependency
   for the core.
 
