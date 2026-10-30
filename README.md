@@ -1,6 +1,6 @@
 # 31Harbor Technical Solutions
 
-**We build agents that actually work.**
+**We build systems that actually work.**
 
 31Harbor Technical Solutions is a holistic hardware and software firm. We build autonomous agents that own an outcome end to end — no waiting for permission, no vague advice, and an audit trail on everything they touch.
 

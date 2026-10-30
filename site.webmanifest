@@ -1,7 +1,7 @@
 {
   "name": "31 Harbor",
   "short_name": "31 Harbor",
-  "description": "We build agents that actually work. Autonomous agents and the systems that run them.",
+  "description": "We build systems that actually work. Autonomous agents and the systems that run them.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#080b0a",
